@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jvalidate - a jQuery validation plugin</title>
+	</head>
+	<body>
+		<div class="jForm">
+			First Name:
+			<br />
+			<input type="text" class="required" id="txtFirstName" name="txtFirstName" />
+			<br />
+			Last Name:
+			<br />
+			<input type="text" class="required" id="txtLastName" name="txtLastName" />
+			<br /><br />
+			<input type="button" onclick="alert('something');" value="Validate" class="default-button" />
+		</div>
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script src="src/jquery.jvalidate.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('.jForm').jvalidate();
+			});
+		</script>
+	</body>
+</html>
